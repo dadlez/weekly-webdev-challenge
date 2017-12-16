@@ -1,0 +1,26 @@
+input {
+  font-size: 1.4rem;
+  border: 1px solid grey;
+  border-radius: .2rem;
+  padding-left: 2em;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 10px;
+  /* display: flex;
+  align-items: center; */
+  color: grey;
+}
+
+.user {
+  
+}
