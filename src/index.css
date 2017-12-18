@@ -1,14 +1,19 @@
-input {
-  font-size: 1.4rem;
-  border: 1px solid grey;
+input, select {
+  width: 100%;
+  border: 1px solid lightgrey;
   border-radius: .2rem;
-  padding-left: 2em;
+  padding: .6em;
+  padding-left: 4em;
+  font-size: .8rem;
+  color: grey;
 }
 
 .input-wrapper {
+  width: 340px;
   position: relative;
   display: flex;
   align-items: center;
+  margin: 10px;
 }
 
 .input-icon {
@@ -16,9 +21,25 @@ input {
   height: 1.5rem;
   position: absolute;
   left: 10px;
-  /* display: flex;
-  align-items: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: lightgrey;
+  font-size: .6rem;
+}
+
+.input-icon::after {
+  content: "";
+  height: 24px;
+  transform: translateX(12px);
+  border-right: 1px solid lightgrey;
+}
+
+select {
   color: grey;
+  background: none;
+  padding: .5em;
+  padding-left: 3.8em;
 }
 
 .user {
