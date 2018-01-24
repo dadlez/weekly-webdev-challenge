@@ -16,6 +16,12 @@
     "url": "https://github.com/dadlez/weekly-webdev-challenge/issues"
   },
   "homepage": "https://github.com/dadlez/weekly-webdev-challenge#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "extract-loader": "^1.0.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6"
+  },
   "dependencies": {}
 }
