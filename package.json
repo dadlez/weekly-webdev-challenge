@@ -16,8 +16,6 @@
     "url": "https://github.com/dadlez/weekly-webdev-challenge/issues"
   },
   "homepage": "https://github.com/dadlez/weekly-webdev-challenge#readme",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-serve": "^1.4.0"
-  }
+  "devDependencies": {},
+  "dependencies": {}
 }

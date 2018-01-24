@@ -1,3 +1,4 @@
 node_modules/
 gulpfile.js
-task/
+task-files/
+*.scss
