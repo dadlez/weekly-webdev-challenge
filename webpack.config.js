@@ -13,8 +13,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader']
+        // test: /\.scss$/, use: ['style-loader', 'css-loader?sourceMap', 'resolve-url-loader', 'sass-loader?sourceMap']
+        test: /\.scss$/, use: [
+          { loader: 'style-loader' }, 
+          { loader: 'css-loader', options: { sourceMap: true } },
+          { loader: 'resolve-url-loader'},
+          { loader: 'sass-loader', options: { sourceMap: true } }
+        ],
       }
-    ],
+    ]
   }
 }
