@@ -4,7 +4,8 @@
   "description": "Webdev challanges for programming practice.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
@@ -16,6 +17,14 @@
     "url": "https://github.com/dadlez/weekly-webdev-challenge/issues"
   },
   "homepage": "https://github.com/dadlez/weekly-webdev-challenge#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "css-loader": "^0.28.9",
+    "node-sass": "^4.7.2",
+    "resolve-url-loader": "^2.2.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "webpack": "^2.7.0",
+    "webpack-dev-server": "^2.11.1"
+  },
   "dependencies": {}
 }
