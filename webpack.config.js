@@ -1,26 +1,31 @@
 const path = require('path');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+console.log(path.resolve(__dirname))
 
 module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.join(__dirname)
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.resolve(__dirname),
     watchContentBase: true
   },
   module: {
     rules: [
       {
-        // test: /\.scss$/, use: ['style-loader', 'css-loader?sourceMap', 'resolve-url-loader', 'sass-loader?sourceMap']
-        test: /\.scss$/, use: [
-          { loader: 'style-loader' }, 
-          { loader: 'css-loader', options: { sourceMap: true } },
-          { loader: 'resolve-url-loader'},
-          { loader: 'sass-loader', options: { sourceMap: true } }
-        ],
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader']
+        })
       }
     ]
-  }
+  },
+  plugins: [
+		new ExtractTextPlugin({
+      filename: 'index.css'
+		})
+	]
 }
