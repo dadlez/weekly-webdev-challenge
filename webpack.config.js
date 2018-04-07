@@ -25,7 +25,7 @@ module.exports = {
   },
   plugins: [
 		new ExtractTextPlugin({
-      filename: 'index.css'
+      filename: 'main.css'
 		})
 	]
 }
