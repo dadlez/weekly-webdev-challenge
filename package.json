@@ -19,6 +19,7 @@
   "homepage": "https://github.com/dadlez/weekly-webdev-challenge#readme",
   "devDependencies": {
     "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^2.1.2",
     "node-sass": "^4.7.2",
     "resolve-url-loader": "^2.2.1",
     "sass-loader": "^6.0.6",
