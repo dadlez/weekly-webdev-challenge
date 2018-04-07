@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly-webdev-challenge</title>
+  <!-- icons from Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <div class="main-width">
+    <header class="header">
+      <div class="logo logo--top">
+        <img src="images/logo-top.png" alt="logo-img" />
+      </div>
+    </header>
+
+    <div class="column column--left">
+      <section class="section registerForm">
+        <div class="sectionTitle"><h2>Register Form</h2></div>
+        <div class="container">
+          <form action="#">
+            <div class="inputWrapper">
+              <div class="inputIcon">
+                <i class="fas fa-user fa-lg"></i> 
+              </div>
+              <input class="user" type="text" name="username" placeholder="Username" required>              
+            </div>
+  
+            <div class="inputWrapper">
+              <div class="inputIcon">
+                <i class="fas fa-unlock fa-lg"></i>
+              </div>
+              <input class="password" type="password" name="password" placeholder="Password" required>              
+            </div>
+  
+            <div class="inputWrapper">
+              <div class="inputIcon">
+                <i class="fas fa-unlock fa-lg"></i>
+              </div>
+              <input class="password" type="password" name="confirm-password" placeholder="Confirm password" required>
+            </div>
+  
+            <div class="inputWrapper">
+              <div class="inputIcon">
+                <i class="fas fa-envelope fa-lg"></i>
+              </div>
+              <input class="email" type="email" name="email" placeholder="Email" validate=true required>
+            </div>
+  
+            <div class="inputWrapper">
+              <div class="inputIcon">
+                <i class="fas fa-map-marker fa-lg"></i>
+              </div>
+              <select name="location" id="location">
+                <option value="" selected disabled>Your Location</option>
+                <option value="">Your current location</option>
+                <option value="">Your best friend's location</option>
+                <option value="">Your last vacation location</option>
+                <option value="">Your current grandma's location</option>
+              </select>
+            </div>
+  
+            <div class='inputWrapper checkbox'>
+              <div class="checkbox--custom">
+                <input type="checkbox" name='accept-terms' id='accept-registerForm' checked/>
+                <label for='accept-registerForm'>I have read and accept the terms of use.
+                  <div class="checkbox__center"></div>
+                </label>
+              </div>
+            </div>
+  
+            <div class="inputWrapper">
+              <button class='btn' type=submit>Sign up</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="section sendEmail">
+        <div class="sectionTitle"><h2>Send email</h2></div>
+        <div class="container">
+          <form action="#">
+            <div class="inputWrapper">
+              <div class="inputIcon">
+                <i class="fas fa-user fa-lg"></i> 
+              </div>
+              <input class="user" type="text" name="username" placeholder="Your name" required>              
+            </div>
+  
+            <div class="inputWrapper">
+              <div class="inputIcon">
+                <i class="fas fa-envelope fa-lg"></i>
+              </div>
+              <input class="email" type="email" name="email" placeholder="Your email" validate=true required>
+            </div>
+            
+            <div class='inputWrapper inputWrapper--message'>
+              <textarea class='message' name="message" placeholder="Type your message..."></textarea>
+            </div>
+  
+            <div class='inputWrapper checkbox'>
+              <div class="checkbox--custom">
+                <input type="checkbox" name='accept-terms' id='accept-sendEmail' checked/>
+                <label for='accept-sendEmail'>Send a copy to my email
+                  <div class="checkbox__center"></div>                
+                </label>
+              </div>              
+            </div>
+  
+            <div class="inputWrapper">
+              <button class='btn' type=submit>Send Email</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <div class="column column--right">
+      <section class="section signIn">
+        <div class="sectionTitle"><h2>Sign in Form</h2></div>
+        <div class="container">
+          <form action="#">
+            <div class="inputWrapper">
+              <div class="inputIcon">
+                <i class="fas fa-user fa-lg"></i> 
+              </div>
+              <input class="user" type="text" name="username" placeholder="Username" required>              
+            </div>
+  
+            <div class="inputWrapper">
+              <div class="inputIcon">
+                <i class="fas fa-unlock fa-lg"></i>
+              </div>
+              <input class="password" type="password" name="password" placeholder="Password" required>              
+            </div>
+  
+            <div class='inputWrapper checkbox'>
+              <div class="checkbox--custom">
+                <input type="checkbox" name='accept-terms'  id='accept-signIn' checked/>
+                <label for='accept-signIn'>Remember me
+                  <div class="checkbox__center"></div>                
+                </label>
+              </div>              
+              <button class='btn btn--narrow' type=submit>Sign in</button>
+            </div>
+          </form>
+        </div>
+      </section>
+  
+      <section class="section recover">
+        <div class="sectionTitle"><h2>Recover form</h2></div>
+        <div class="container">
+          <form action="#">
+            <div class="inputWrapper">
+              <div class="inputIcon">
+                <i class="fas fa-envelope fa-lg"></i>
+              </div>
+              <input class="email" type="email" name="email" placeholder="Enter your Email" validate=true required>
+            </div>
+  
+            <div class="inputWrapper">
+              <div class="inputIcon">
+                <i class="fas fa-mobile fa-lg"></i>
+              </div>
+              <input class="phone" type="text" name="phone" placeholder="Enter your Phone number" validate=true required>
+            </div>
+  
+            <div class="inputWrapper">
+              <button class='btn btn--narrow' type=submit>Send</button>
+              <button class='btn btn--narrow' type=submit disabled>Done</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="section subscribe">
+        <div class="sectionTitle"><h2>Recover form</h2></div>
+        <div class="container">
+          <form action="#">
+            <div class="inputWrapper">
+              <div class="inputIcon">
+                <i class="fas fa-envelope fa-lg"></i>
+              </div>
+              <input class="email" type="email" name="email" placeholder="Enter your Email" validate=true required>
+            </div>
+            
+            <div class="inputWrapper">
+              <button class='btn btn--narrow' type=submit>Subscribe</button>
+              <button class='btn btn--reject btn--narrow'>No, thanks</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="section">
+        <div class="logo logo--bottom">
+          <img src="images/logo-top.png" alt="logo-img" />
+          <img src="images/logo-bottom.png" alt="url" />
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
