@@ -17,7 +17,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  background: url("/images/background.jpg") no-repeat center center;
+  background: orangered url("images/background.jpg") no-repeat center center;
   background-size: cover;
   padding: 54px 0 53px; }
 
